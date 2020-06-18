@@ -17,6 +17,14 @@ import FunctionEventAnsA from './tutolial/function_event/answer/A'
 import FunctionEventAnsB from './tutolial/function_event/answer/B'
 import FunctionEventAnsC from './tutolial/function_event/answer/C'
 import FunctionEventAnsD from './tutolial/function_event/answer/D'
+import EffectMemoA from './tutolial/effect_memo/A'
+import EffectMemoB from './tutolial/effect_memo/B'
+import EffectMemoC from './tutolial/effect_memo/C'
+import EffectMemoAnsA from './tutolial/effect_memo/answer/A'
+import EffectMemoAnsB from './tutolial/effect_memo/answer/B'
+import EffectMemoAnsC from './tutolial/effect_memo/answer/C'
+import ComponentA from './tutolial/component/A'
+import ComponentAnsA from './tutolial/component/answer/A'
 
 const routeMap = {
   sample: [
@@ -33,6 +41,14 @@ const routeMap = {
     {component: <FunctionEventB/>, label: '関数・イベント第2問', question: 'B', answer: <FunctionEventAnsB/>},
     {component: <FunctionEventC/>, label: '関数・イベント第3問', question: 'C', answer: <FunctionEventAnsC/>},
     {component: <FunctionEventD/>, label: '関数・イベント第4問', question: 'D', answer: <FunctionEventAnsD/>},
+  ],
+  effect_memo: [
+    { component: <EffectMemoA />, label: '副作用・メモ化第1問', question: 'A', answer: <EffectMemoAnsA /> },
+    { component: <EffectMemoB />, label: '副作用・メモ化第2問', question: 'B', answer: <EffectMemoAnsB /> },
+    { component: <EffectMemoC />, label: '副作用・メモ化第3問', question: 'C', answer: <EffectMemoAnsC /> },
+  ],
+  component: [
+    { component: <ComponentA />, label: 'コンポーネント間の通信第1問', question: 'A', answer: <ComponentAnsA /> },
   ]
 }
 

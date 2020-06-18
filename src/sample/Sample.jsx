@@ -1,17 +1,10 @@
-import React, { useState } from 'react'
+import React from "react";
+import PostForm from "./Children";
+const App = () => {
+  const handleSave = () => alert("save");
 
-function Sample() {
-  const [name, setName] = useState('サイコウ');
-  const handleName = e => {
-    setName(e.target.value)
-  }
   return (
-    <div>
-      <input type="text" value={name}
-  onChange={handleName} />
-	{name}
-    </div>
+    <PostForm onSave={handleSave} />
   );
-}
-
-export default Sample;
+};
+export default App;
